@@ -253,7 +253,6 @@
     }
 
     .navigation {        
-        .lib-css(border-bottom, 2px solid @header__border-color);
         .level0 {
             & > .level-top {
                 text-transform: uppercase;
@@ -263,7 +262,8 @@
 
     .nav-sections {
         .lib-vendor-prefix-flex-shrink(0);
-        .lib-vendor-prefix-flex-basis(auto);
+        .lib-vendor-prefix-flex-basis(auto);        
+        .lib-css(border-bottom, 1px solid @header__border-color);
         margin-bottom: @indent__m;
         &-item-title {
             display: none;
