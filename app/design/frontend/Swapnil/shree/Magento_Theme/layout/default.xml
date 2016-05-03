@@ -15,13 +15,7 @@
         </referenceBlock>
 
         <move element="top.search" destination="header-wrapper" before="minicart"/>
-        <referenceContainer name="header.panel">
-            <block class="Magento\Cms\Block\Block" name="phone_number" htmlClass="phone-number">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">phone_number</argument>
-                </arguments>
-            </block>
-        </referenceContainer>
+
 
     </body>
 </page>
