@@ -23,8 +23,8 @@
             </strong>   
         <?php foreach ($block->getStores() as $_lang): ?>
             <?php if ($_lang->getId() != $block->getCurrentStoreId()): ?>
-                    <a href="#" data-post='<?php /* @escapeNotVerified */ echo $block->getTargetStorePostData($_lang); ?>'>
-                        <?php echo $block->escapeHtml($_lang->getCode()) ?></a>
+                <span class="divider"> / </span> 
+                <a href="#" data-post='<?php /* @escapeNotVerified */ echo $block->getTargetStorePostData($_lang); ?>'><?php echo $block->escapeHtml($_lang->getCode()) ?></a>
             <?php endif; ?>
         <?php endforeach; ?>        
     </div>

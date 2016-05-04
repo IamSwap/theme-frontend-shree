@@ -26,8 +26,8 @@
             </strong>
         
             <?php foreach ($currencies as $_code => $_name): ?>
-                <?php if ($_code != $currentCurrencyCode): ?>
-                   
+                <?php if ($_code != $currentCurrencyCode): ?>        
+                        <span class="divider"> / </span>           
                         <a href="#" data-post='<?php /* @escapeNotVerified */ echo $block->getSwitchCurrencyPostData($_code); ?>'><?php /* @escapeNotVerified */ echo $_code ?></a>
                 <?php endif; ?>
             <?php endforeach; ?>
