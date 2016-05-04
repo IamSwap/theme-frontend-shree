@@ -252,7 +252,11 @@
         display: none;
     }
 
-    .navigation {        
+    .navigation {    
+        ul {
+            .lib-css(border-bottom, 1px solid #C6C6C7);
+            .lib-css(margin, 0 15px);
+        }    
         .level0 {
             & > .level-top {
                     .lib-css(text-transform, uppercase);
@@ -287,7 +291,6 @@
     .nav-sections {
         .lib-vendor-prefix-flex-shrink(0);
         .lib-vendor-prefix-flex-basis(auto);        
-        .lib-css(box-shadow, 0px 1px 2px #e9e9e9);
         margin-bottom: @indent__m;
         &-item-title {
             display: none;
@@ -309,6 +312,9 @@
         .links,
         .switcher {
             display: inline-block;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 16px;
         }
     }
 }
