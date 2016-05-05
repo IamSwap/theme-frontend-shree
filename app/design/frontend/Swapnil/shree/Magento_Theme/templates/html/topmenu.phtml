@@ -1,0 +1,34 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+<?php $columnsLimit = $block->getColumnsLimit() ?: 0; ?>
+<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit) ?>
+<?php 
+    // To identify current page is homepage.
+    $currentUrl = $this->getUrl('', ['_current' => true]);
+    $urlRewrite = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);
+?>
+
+<nav class="navigation cc" role="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <?php if ($currentUrl == $urlRewrite):?>
+                <li class="level0 nav-2 level-top parent ui-menu-item active"><a class="level-top" href="<?php echo $block->getUrl(''); ?>" title="Home"><span class="icon-home3" aria-hidden="true"></span></a></li>
+        <?php else: ?>
+                <li class="level0 nav-2 level-top parent ui-menu-item"><a class="level-top" href="<?php echo $block->getUrl(''); ?>" title="Home"><span class="icon-home3" aria-hidden="true"></span></a></li>
+        <?php endif ?>
+        <?php /* @escapeNotVerified */ echo $_menu; ?>
+    </ul>
+</nav>
