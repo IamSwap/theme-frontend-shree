@@ -25,9 +25,9 @@
 <nav class="navigation cc" role="navigation">
     <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
         <?php if ($currentUrl == $urlRewrite):?>
-                <li class="level0 nav-2 level-top parent ui-menu-item active"><a class="level-top" href="<?php echo $block->getUrl(''); ?>" title="Home"><span class="icon-home3" aria-hidden="true"></span></a></li>
+                <li class="level0 nav-2 level-top parent ui-menu-item active" role="presentation"><a class="level-top" href="<?php echo $block->getUrl(''); ?>" title="Home"><span class="icon-home3" aria-hidden="true"></span></a></li>
         <?php else: ?>
-                <li class="level0 nav-2 level-top parent ui-menu-item"><a class="level-top" href="<?php echo $block->getUrl(''); ?>" title="Home"><span class="icon-home3" aria-hidden="true"></span></a></li>
+                <li class="level0 nav-2 level-top parent ui-menu-item" role="presentation"><a class="level-top" href="<?php echo $block->getUrl(''); ?>" title="Home"><span class="icon-home3" aria-hidden="true"></span></a></li>
         <?php endif ?>
         <?php /* @escapeNotVerified */ echo $_menu; ?>
     </ul>

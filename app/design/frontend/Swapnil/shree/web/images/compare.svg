@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1"
+   viewBox="0 0 48 48"
+   enable-background="new 0 0 48 48"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="compare.svg">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="75"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <g
+     id="g3352"
+     transform="translate(0,2)">
+    <polygon
+       style="fill:#3f51b5"
+       transform="matrix(0.82711864,0,0,0.82711864,12.589831,5.0237288)"
+       id="polygon4"
+       points="17.3,18 40.7,18 29,4 " />
+    <path
+       style="fill:#3f51b5"
+       inkscape:connector-curvature="0"
+       id="path6"
+       d="m 29.959322,39.762712 -10.752542,0 0,-6.616949 10.752542,0 c 1.819661,0 3.308475,-1.488814 3.308475,-3.308475 l 0,-14.061017 6.616949,0 0,14.061017 c 0,5.458983 -4.46644,9.925424 -9.925424,9.925424 z" />
+  </g>
+  <g
+     id="g3348"
+     transform="translate(0,-2)">
+    <polygon
+       transform="matrix(0.82711864,0,0,0.82711864,-3.9525424,1.7152543)"
+       id="polygon4-0"
+       points="30.7,30 7.3,30 19,44 "
+       style="fill:#3f51b5" />
+    <path
+       id="path6-8"
+       d="m 18.379661,6.6779661 10.752543,0 0,6.6169489 -10.752543,0 c -1.819661,0 -3.308474,1.488814 -3.308474,3.308475 l 0,14.061017 -6.6169497,0 0,-14.061017 c 0,-5.458983 4.4664407,-9.9254239 9.9254237,-9.9254239 z"
+       style="fill:#3f51b5"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
