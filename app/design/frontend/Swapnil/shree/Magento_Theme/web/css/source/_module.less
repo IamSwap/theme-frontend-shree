@@ -179,7 +179,7 @@ body {
         .options {
             .divider {
                 color: @color-gray80;
-                font-size: 12px;
+                font-size: @font-size__s - 1;
             }
             ul.dropdown {
                 a {
@@ -258,20 +258,38 @@ body {
                 font-size: 0;
                 .lib-list-inline();
                 > li {
-                    font-size: @font-size__s;
-                    margin: 0 0 0 15px;
+                    font-size: @font-size__s - 1;
+                    margin: 0px;
                     text-transform: uppercase;
                     &.welcome,
                     a {
                         line-height: 1.4;
                     }
                     &.welcome {
+                        margin-right: 15px;
+                        &:after {
+                            display: none;
+                        }
                         a {
                             .lib-css(padding-left, @indent__xs);
                         }
                     }
+                    &:after {
+                        content: "/";
+                        font-size: 11px;
+                        color: @color-gray80;
+                        margin: 0 5px;
+                    }
+                    &:first-child:after {
+                        display: none;
+                    }
+                     &:last-child:after {
+                        display: none;
+                    }
                 }
+
                 margin-left: auto;
+                padding-top: 3px;
             }
         }
         &.content {
@@ -287,8 +305,11 @@ body {
             
         }
         .header.panel {
+            padding: 0px;
             padding-top: @indent__s;
             padding-bottom: @indent__s;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
             &:extend(.abs-add-clearfix-desktop all);
         }
         .switcher {
