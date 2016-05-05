@@ -15,9 +15,17 @@
         </referenceBlock>
 
 
-            <referenceContainer name="header.panel.wrapper" htmlClass="panel wrapper container" />
-        
-        <move element="top.search" destination="header-wrapper" before="minicart"/>
+        <referenceContainer name="header.panel.wrapper" htmlClass="panel wrapper container" />
+
+        <referenceContainer name="header-wrapper">
+            <container name="icons-wrapper" htmlTag="div" htmlClass="icons-wrapper col-md-4" after="-">
+                <block class="Magento\Framework\View\Element\Template" name="mini_login" template="Magento_Theme::html/mini_login.phtml" before="-" />
+                <block class="Magento\Framework\View\Element\Template" name="mini_wishlist" template="Magento_Theme::html/mini_wishlist.phtml" before="minicart" />
+            </container>   
+        </referenceContainer>       
+       
+        <move element="minicart" destination="icons-wrapper"/>
+        <move element="top.search" destination="header-wrapper" before="icons-wrapper"/>
 
 
     </body>
