@@ -271,7 +271,7 @@
             }
             & > .ui-state-active {
                 .lib-css(background, @color-white);
-                .lib-main-navigation-desktop(@_nav-level0-item-color-active: @navigation-desktop-level0-item__active__color);
+                .lib-css(color, @navigation-desktop-level0-item__active__color) !important;
                 .lib-css(border-color, @navigation-desktop-level0-item__active__border-color);
             }
             
@@ -456,6 +456,20 @@
                     height: 0;
                     position: absolute;
                     width: 0;
+                }
+                .block-title {
+                    padding-bottom: 12px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #e8e8e8;
+                    font-size: 1.8rem;
+                    strong {
+                        font-weight: 500;
+                    }
+                }
+                .fieldset {
+                    & > .field {
+                        margin: 0 0 20px;
+                    }
                 }
         }
         
