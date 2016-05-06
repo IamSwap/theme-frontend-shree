@@ -194,10 +194,15 @@
             position: absolute;
         }
         input {
+            .lib-css(background, transparent);
+            .lib-css(border, 2px solid @color-gray-light1);
             position: static;
             padding-right: 35px;
             margin: 0;
             .lib-input-placeholder(@form-element-input-placeholder__color);
+            &:focus {
+                .lib-css(box-shadow, none);
+            }
         }
         .action.search {
             position: absolute;
@@ -208,13 +213,16 @@
             .lib-button-icon(
                 @_icon-font-content: @icon-search,
                 @_icon-font-text-hide: true,
-                @_icon-font-color: @header-icons-color
+                @_icon-font-color: @color-gray-light3
             );
             .lib-button-reset();
             &:focus {
                 &:before {
                     .lib-css(color, @color-gray20);
                 }
+            }
+            &[disabled] {
+                .lib-css(opacity, 1);
             }
             padding: @indent__xs 0;
         }
