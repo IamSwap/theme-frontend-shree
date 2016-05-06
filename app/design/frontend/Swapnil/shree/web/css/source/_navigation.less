@@ -323,6 +323,7 @@
         .minicompare {
             display: inline-block;
             margin: 0 10px;
+            position: relative;
         }
         
         .minilogin {
@@ -345,6 +346,22 @@
                 background-repeat: no-repeat; 
                 background-position: center;
                 text-align: center;
+             }
+             .counter.qty {
+                .lib-css(background, @theme-color);
+                .lib-css(color, @page__background-color);
+                .lib-css(height, @minicart-qty__height);
+                .lib-css(line-height, @minicart-qty__height);
+                border-radius: 2px;
+                margin: 3px 0 0;
+                width: 18px;
+                overflow: hidden;
+                padding: 0 3px;
+                text-align: center;
+                white-space: normal;
+                position: absolute;
+                top: 1px;
+                right: -15px;
              }
         }
         .minicart-wrapper {
@@ -389,7 +406,6 @@
             }
         }
 
-        .block-minicompare,
         .block-minilogin {
                 background: #ffffff;
                 border: 1px solid #bbbbbb;
@@ -399,14 +415,40 @@
                 list-style: none none;
                 box-sizing: border-box;
                 position: absolute;
-                top: 100%;
+                top: 155%;
                 box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
                 margin-top: 4px;
                 min-width: 100%;
                 display: none;
                 right: 0;
                 width: 390px;
-                padding: 10px;
+                padding: 25px 20px;
+                text-align: left;
+                &:before {
+                    border: 6px solid;
+                    border-color: transparent transparent #ffffff transparent;
+                    z-index: 99;
+                    left: auto;
+                    right: 17px;
+                    top: -12px;
+                }
+                &:after {
+                    border: 7px solid;
+                    border-color: transparent transparent #bbbbbb transparent;
+                    z-index: 98;
+                    left: auto;
+                    right: 16px;
+                    top: -14px;
+                }
+                &:before,
+                &:after {
+                    border-bottom-style: solid;
+                    content: '';
+                    display: block;
+                    height: 0;
+                    position: absolute;
+                    width: 0;
+                }
         }
         
     }

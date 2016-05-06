@@ -7,23 +7,11 @@
 // @codingStandardsIgnoreFile
 
 ?>
-<div data-block="minicompare" class="minicompare">
-    <a href=""  class="showcompare"><span>Compare</span></a>  
-    <div class="block block-minicompare"
-                 data-role="dropdownDialog"
-                 data-mage-init='{"dropdownDialog":{
-                    "appendTo":"[data-block=minicompare]",
-                    "triggerTarget":".showcompare",
-                    "timeout": "2000",
-                    "closeOnMouseLeave": false,
-                    "closeOnEscape": true,
-                    "triggerClass":"active",
-                    "parentClass":"active",
-                    "buttons":[]}}'>
-                    <div id="minicompare-content-wrapper">
-                            Compare Products
-                    </div>
-        </div>  
+<div class="minicompare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+    <a data-bind="attr: {'href': compareProducts().listUrl}" href="" target="_blank">
+            <span><?php /* @escapeNotVerified */ echo __('Compare') ?></span>
+                <span class="counter qty" data-bind="text: compareProducts().count, css: {'no-display': !compareProducts().count}"></span>
+    </a>  
 </div>
     
 
