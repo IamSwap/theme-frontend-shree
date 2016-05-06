@@ -327,7 +327,7 @@
         }
         
         .minilogin {
-            a {   
+            a.showlogin {   
                 display: block;
                 height: 36px;
                 width: 50px;                
@@ -335,6 +335,9 @@
                 background-repeat: no-repeat; 
                 background-position: center;
                 text-align: center;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
         .minicompare {
@@ -346,6 +349,9 @@
                 background-repeat: no-repeat; 
                 background-position: center;
                 text-align: center;
+                &:hover {
+                    text-decoration: none;
+                }
              }
              .counter.qty {
                 .lib-css(background, @theme-color);
@@ -396,13 +402,15 @@
         }
         .minilogin,
         .minicompare {
-            span {
+            span.label {
                 position: relative;
                 top: 36px;
                 width: 100%;
                 font-size: @font-size__s - 1;
                 text-transform: uppercase;
                 color: @color-gray34;
+                font-weight: 400;
+                padding: 0;
             }
         }
 

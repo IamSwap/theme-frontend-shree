@@ -16,7 +16,7 @@
  */
 ?>
 <div data-block="minilogin" class="minilogin">
-        <a href="<?php echo $block->getUrl('customer/account/login'); ?>" class="showlogin"><span>Login</span></a>    
+        <a href="<?php echo $block->getUrl('customer/account/login'); ?>" class="showlogin"><span class="label">Login</span></a>    
         <div class="block block-minilogin"
                  data-role="dropdownDialog"
                  data-mage-init='{"dropdownDialog":{
@@ -29,9 +29,6 @@
                     "parentClass":"active",
                     "buttons":[]}}'>
                     <div id="minilogin-content-wrapper">
-                            <div class="block-title">
-                                <strong id="block-customer-login-heading" role="heading" aria-level="2"><?php /* @escapeNotVerified */ echo __('Registered Customers') ?></strong>
-                            </div>
                             <div class="block-content" aria-labelledby="block-customer-login-heading">
                                 <form class="form form-login"
                                       action="<?php /* @escapeNotVerified */ echo $block->getPostActionUrl() ?>"
@@ -40,7 +37,6 @@
                                       data-mage-init='{"validation":{}}'>
                                     <?php echo $block->getBlockHtml('formkey'); ?>
                                     <fieldset class="fieldset login" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
-                                        <div class="field note"><?php /* @escapeNotVerified */ echo __('If you have an account, sign in with your email address.') ?></div>
                                         <div class="field email required">
                                             <label class="label" for="email"><span><?php /* @escapeNotVerified */ echo __('Email') ?></span></label>
                                             <div class="control">

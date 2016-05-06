@@ -9,7 +9,7 @@
 ?>
 <div class="minicompare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
     <a data-bind="attr: {'href': compareProducts().listUrl}" href="" target="_blank">
-            <span><?php /* @escapeNotVerified */ echo __('Compare') ?></span>
+            <span class="label"><?php /* @escapeNotVerified */ echo __('Compare') ?></span>
                 <span class="counter qty" data-bind="text: compareProducts().count, css: {'no-display': !compareProducts().count}"></span>
     </a>  
 </div>
